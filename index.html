@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Grade Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Student Grade Book</h1>
+
+  <form id="gradeForm">
+    <input type="text" id="studentName" placeholder="Student Name" required />
+    <input type="text" id="subject" placeholder="Subject" required />
+    <input type="number" id="grade" placeholder="Grade" min="0" max="100" required />
+    <button type="submit">Add Grade</button>
+  </form>
+
+  <table id="gradeTable">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+        <th>Average</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Grades will go here -->
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
